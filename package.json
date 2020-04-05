@@ -4,6 +4,7 @@
 	"description": "Dice game",
 	"main": "src/app.js",
 	"scripts": {
+		"test": "npx babel-node spec/specRun.js",
 		"clean": "rimraf dist",
 		"build": "npm run clean && rollup -c",
 		"lint": "eslint $PWD/'**/*.js'"
