@@ -1,5 +1,3 @@
-import '../css/style.css';
-
 const club = 'Chelsea';
 
-export default club;
+export default { club };

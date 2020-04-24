@@ -6,7 +6,7 @@
 	"scripts": {
 		"test": "npx babel-node spec/specRun.js",
 		"clean": "rimraf dist",
-		"build": "npm run clean && rollup -c",
+		"build": "npm run clean",
 		"lint": "eslint $PWD/'**/*.js'"
 	},
 	"husky": {
