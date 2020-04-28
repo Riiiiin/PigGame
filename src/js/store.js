@@ -11,6 +11,9 @@ let store = {
 	btnRoll: document.querySelector('.btn-roll'),
 	btnHold: document.querySelector('.btn-hold'),
 
+	nameFirstPlayer: document.getElementById('name-0'),
+	nameSecondPlayer: document.getElementById('name-1'),
+
 	dice: document.querySelector('.dice'),
 };
 
