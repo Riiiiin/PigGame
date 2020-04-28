@@ -1,3 +1,4 @@
-const club = 'Chelsea';
+import { store } from './store.js';
+import { init } from './init.js';
 
-export default { club };
+init();
