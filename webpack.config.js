@@ -20,10 +20,16 @@ module.exports = {
 			template: './src/index.html',
 			inject: false,
 		}),
-		new HtmlReplaceWebpackPlugin({
-			pattern: '<script src="app.js"></script>',
-			replacement: '<script src="js/bundle.js"></script>',
-		}),
+		new HtmlReplaceWebpackPlugin([
+			{
+				pattern: '<script src="js/app.js"></script>',
+				replacement: '<script src="js/bundle.js"></script>',
+			},
+			{
+				pattern: '<script src="js/store.js"></script>',
+				replacement: '',
+			},
+		]),
 	],
 	module: {
 		rules: [
