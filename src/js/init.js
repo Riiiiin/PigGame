@@ -1,12 +1,11 @@
 import { store } from './store.js';
-
-let scores, gamePlay, roundScore, activePlayer;
+import { gameLogic } from './gameLogic.js';
 
 let init = () => {
-	activePlayer = 0;
-	scores = [0, 0];
-	roundScore = 0;
-	gamePlay = true;
+	gameLogic.activePlayer = 0;
+	gameLogic.scores = [0, 0];
+	gameLogic.roundScore = 0;
+	gameLogic.gamePlay = true;
 	store.scoreFirstPlayer.textContent = '0';
 	store.scoreSecondPlayer.textContent = '0';
 	store.currentScoreFirstPlayer.textContent = '0';
