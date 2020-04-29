@@ -7,14 +7,14 @@
 		"test": "npx babel-node spec/specRun.js",
 		"clean": "rimraf dist",
 		"build": "npm run clean && webpack",
-		"lint": "eslint $PWD/'**/*.js'"
+		"lint": "eslint --fix $PWD/'**/*.js'"
 	},
 	"husky": {
 		"pre-commit": "lint-staged"
 	},
 	"lint-staged": {
 		"*.js": [
-			"npm run format",
+			"npm run lint",
 			"git add"
 		]
 	},
