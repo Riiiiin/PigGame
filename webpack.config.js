@@ -29,6 +29,10 @@ module.exports = {
 				pattern: '<script src="js/store.js"></script>',
 				replacement: '',
 			},
+			{
+				pattern: '<link rel="stylesheet" href="css/style.css"/>',
+				replacement: '<link rel="stylesheet" href="css/bundle.css"/>',
+			},
 		]),
 	],
 	module: {
