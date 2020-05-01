@@ -15,6 +15,7 @@ let store = {
 	nameSecondPlayer: document.getElementById('name-1'),
 
 	dice: document.querySelector('.dice'),
+	new: document.querySelector('.btn-new'),
 };
 
 export { store };
